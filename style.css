@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #001f3f, #004080, #0074D9);
+  color: #e6f7ff;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+header {
+  padding: 25px;
+  background: rgba(0, 31, 63, 0.85);
+  box-shadow: 0 0 25px rgba(0,198,255,0.6);
+  border-bottom: 2px solid #00c6ff;
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #00c6ff;
+  text-shadow: 0 0 20px #00c6ff;
+  letter-spacing: 2px;
+}
+
+.rumus, .pengertian {
+  margin: 30px auto;
+  max-width: 800px;
+  background: rgba(0, 50, 100, 0.4);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,198,255,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.rumus:hover, .pengertian:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(0,198,255,0.8);
+}
+
+.rumus table, .pengertian table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.rumus td, .pengertian th, .pengertian td {
+  border: 1px solid #00c6ff;
+  padding: 12px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+.rumus td:hover, .pengertian tr:hover td {
+  background: rgba(0,198,255,0.2);
+}
+
+.calc-section {
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 420px;
+  background: rgba(0, 50, 100, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,198,255,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.calc-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 35px rgba(0,198,255,0.8);
+}
+
+input {
+  width: 80%;
+  padding: 12px;
+  margin: 12px;
+  border: 1px solid #00c6ff;
+  border-radius: 8px;
+  background: #001f3f;
+  color: #e6f7ff;
+  transition: box-shadow 0.3s ease;
+}
+input:focus {
+  box-shadow: 0 0 15px #00c6ff;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #00c6ff, #0074D9);
+  border: none;
+  border-radius: 8px;
+  color: #001f3f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(90deg, #0074

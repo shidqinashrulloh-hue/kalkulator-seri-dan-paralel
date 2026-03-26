@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Elektronika</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Kalkulator Elektronika</h1>
+    <p>Resistor & Kapasitor Interaktif</p>
+  </header>
+
+  <main>
+    <!-- Tabel Rumus -->
+    <section class="rumus">
+      <h2>Rumus Dasar</h2>
+      <table>
+        <tr><td><strong>Resistor Seri:</strong></td><td>Rtotal = R1 + R2</td></tr>
+        <tr><td><strong>Resistor Paralel:</strong></td><td>1/Rtotal = 1/R1 + 1/R2</td></tr>
+        <tr><td><strong>Kapasitor Seri:</strong></td><td>1/Ctotal = 1/C1 + 1/C2</td></tr>
+        <tr><td><strong>Kapasitor Paralel:</strong></td><td>Ctotal = C1 + C2</td></tr>
+      </table>
+    </section>
+
+    <!-- Tabel Pengertian -->
+    <section class="pengertian">
+      <h2>Pengertian Komponen Elektronika</h2>
+      <table>
+        <tr>
+          <th>Komponen</th>
+          <th>Pengertian</th>
+          <th>Fungsi Utama</th>
+        </tr>
+        <tr>
+          <td>Resistor</td>
+          <td>Komponen yang berfungsi menghambat arus listrik.</td>
+          <td>Mengatur arus, membagi tegangan, melindungi komponen lain.</td>
+        </tr>
+        <tr>
+          <td>Kapasitor</td>
+          <td>Komponen yang menyimpan energi listrik dalam bentuk muatan.</td>
+          <td>Menyimpan energi, menyaring sinyal, menstabilkan tegangan.</td>
+        </tr>
+        <tr>
+          <td>Induktor</td>
+          <td>Komponen yang menyimpan energi dalam bentuk medan magnet.</td>
+          <td>Filter sinyal, penyimpanan energi, rangkaian osilator.</td>
+        </tr>
+        <tr>
+          <td>Dioda</td>
+          <td>Komponen yang hanya mengalirkan arus ke satu arah.</td>
+          <td>Penyearah arus, proteksi polaritas, rangkaian logika.</td>
+        </tr>
+        <tr>
+          <td>Transistor</td>
+          <td>Komponen semikonduktor untuk penguatan dan switching.</td>
+          <td>Penguatan sinyal, saklar elektronik, rangkaian digital.</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Kalkulator -->
+    <section class="calc-section">
+      <h2>Resistor Seri</h2>
+      <input type="number" id="r1" placeholder="Resistor 1 (Ω)">
+      <input type="number" id="r2" placeholder="Resistor 2 (Ω)">
+      <button onclick="hitungResistorSeri()">Hitung</button>
+      <div id="hasil-resistor-seri"></div>
+    </section>
+
+    <section class="calc-section">
+      <h2>Resistor Paralel</h2>
+      <input type="number" id="rp1" placeholder="Resistor 1 (Ω)">
+      <input type="number" id="rp2" placeholder="Resistor 2 (Ω)">
+      <button onclick="hitungResistorParalel()">Hitung</button>
+      <div id="hasil-resistor-paralel"></div>
+    </section>
+
+    <section class="calc-section">
+      <h2>Kapasitor Paralel</h2>
+      <input type="number" id="c1" placeholder="Kapasitor 1 (μF)">
+      <input type="number" id="c2" placeholder="Kapasitor 2 (μF)">
+      <button onclick="hitungKapasitorParalel()">Hitung</button>
+      <div id="hasil-kapasitor-paralel"></div>
+    </section>
+
+    <section class="calc-section">
+      <h2>Kapasitor Seri</h2>
+      <input type="number" id="cs1" placeholder="Kapasitor 1 (μF)">
+      <input type="number" id="cs2" placeholder="Kapasitor 2 (μF)">
+      <button onclick="hitungKapasitorSeri()">Hitung</button>
+      <div id="hasil-kapasitor-seri"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dibuat oleh <strong>Shidqi Nashrulloh</strong> &copy; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
